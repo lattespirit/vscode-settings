@@ -1,0 +1,108 @@
+[
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "better-phpunit.run"
+    },
+    {
+        "key": "cmd+k cmd+r",
+        "command": "-better-phpunit.run"
+    },
+    {
+        "key": "shift+t",
+        "command": "better-phpunit.run-previous",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    {
+        "key": "cmd+k cmd+p",
+        "command": "-better-phpunit.run-previous"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "projectManager.listProjects"
+    },
+    {
+        "key": "alt+cmd+p",
+        "command": "-projectManager.listProjects"
+    },
+    {
+        "key": "alt+cmd+p",
+        "command": "projectManager.listProjectsNewWindow"
+    },
+    {
+        "key": "cmd+b",
+        "command": "php-cs-fixer.fix"
+    },
+    {
+        "key": "alt+j",
+        "command": "extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "alt+k",
+        "command": "extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+r",
+        "command": "workbench.action.showAllSymbols",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    {
+        "key": "shift+x",
+        "command": "workbench.action.reopenClosedEditor",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    {
+        "key": ", a",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    {
+        "key": ", s",
+        "command": "workbench.action.toggleStatusbarVisibility",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+    },
+    {
+        "key": ", t",
+        "command": "workbench.action.toggleTabsVisibility",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+    }
+]

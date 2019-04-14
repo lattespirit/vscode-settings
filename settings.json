@@ -1,0 +1,30 @@
+{
+    "workbench.statusBar.visible": false,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontSize": 14.5,
+    "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off",
+    "vim.leader": ",",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "workbench.colorTheme": "Slime",
+    "editor.fontLigatures": true,
+    "workbench.activityBar.visible": false,
+    "explorer.openEditors.visible": 0,
+    "php-cs-fixer.config": "~/.php_cs",
+    "window.openFilesInNewWindow": "on",
+    "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "php-cs-fixer.allowRisky": true,
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    },
+    "workbench.editor.showTabs": true
+}
