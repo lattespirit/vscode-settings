@@ -1,0 +1,115 @@
+[
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+2",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "alt+4",
+        "command": "workbench.action.nextSideBarView"
+    },
+    {
+        "key": "alt+3",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+k ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "oem_comma s",
+        "command": "workbench.action.toggleStatusbarVisibility",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "oem_comma a",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "oem_comma t",
+        "command": "workbench.action.toggleTabsVisibility",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "oem_comma m",
+        "command": "workbench.action.toggleMenuBar",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "win+k win+r",
+        "command": "-better-phpunit.run"
+    },
+    {
+        "key": "win+k win+p",
+        "command": "-better-phpunit.run-previous"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "php-cs-fixer.fix"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f12",
+        "command": "-editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "projectManager.listProjects"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "-projectManager.listProjects"
+    },
+    {
+        "key": "r",
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+x",
+        "command": "workbench.action.reopenClosedEditor",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "better-phpunit.run",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+t",
+        "command": "better-phpunit.run-previous",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "better-phpunit.run-suite",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+r",
+        "command": "workbench.action.showAllSymbols",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    }
+]
