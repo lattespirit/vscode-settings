@@ -68,26 +68,6 @@
         "key": "ctrl+alt+p",
         "command": "projectManager.listProjects"
     },
-    {
-        "key": "r",
-        "command": "workbench.action.gotoSymbol",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
-    {
-        "key": "shift+x",
-        "command": "workbench.action.reopenClosedEditor",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
-    {
-        "key": "q",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
-    {
-        "key": "shift+r",
-        "command": "workbench.action.showAllSymbols",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
 
     // Window Section
     {
@@ -116,7 +96,7 @@
     },
     {
         "key": "shift+j",
-        "command": "workbench.action.moveEditorToBelowGroup",
+        "command": "editor.action.joinLines",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
@@ -168,6 +148,26 @@
         "key": "alt+enter",
         "command": "editor.action.showContextMenu",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "r",
+        "command": "workbench.action.gotoSymbol",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+x",
+        "command": "workbench.action.reopenClosedEditor",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+r",
+        "command": "workbench.action.showAllSymbols",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
 
     // Removed Section
