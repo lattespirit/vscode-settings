@@ -1,108 +1,212 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
+    // Sidebar Section
     {
         "key": "cmd+1",
         "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "cmd+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
         "key": "cmd+2",
         "command": "workbench.files.action.showActiveFileInExplorer"
     },
     {
-        "key": "cmd+r",
-        "command": "workbench.action.gotoSymbol"
+        "key": "cmd+4",
+        "command": "workbench.action.nextSideBarView"
+    },
+
+    // Terminal Section
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "shift+cmd+o",
-        "command": "-workbench.action.gotoSymbol"
+        "key": "escape",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+
+    // Toolbar Section
+    {
+        "key": "oem_comma s",
+        "command": "workbench.action.toggleStatusbarVisibility",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": "shift+cmd+r",
-        "command": "workbench.action.showAllSymbols"
+        "key": "oem_comma a",
+        "command": "workbench.action.toggleActivityBarVisibility",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
+    {
+        "key": "oem_comma t",
+        "command": "workbench.action.toggleTabsVisibility",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+
+    // PHP Section
     {
         "key": "cmd+t",
-        "command": "-workbench.action.showAllSymbols"
-    },
-    {
-        "key": "cmd+t",
-        "command": "better-phpunit.run"
-    },
-    {
-        "key": "cmd+k cmd+r",
-        "command": "-better-phpunit.run"
+        "command": "better-phpunit.run",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
         "key": "shift+t",
         "command": "better-phpunit.run-previous",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": "cmd+k cmd+p",
-        "command": "-better-phpunit.run-previous"
-    },
-    {
-        "key": "ctrl+alt+p",
-        "command": "projectManager.listProjects"
-    },
-    {
-        "key": "alt+cmd+p",
-        "command": "-projectManager.listProjects"
-    },
-    {
-        "key": "alt+cmd+p",
-        "command": "projectManager.listProjectsNewWindow"
+        "key": "cmd+shift+t",
+        "command": "better-phpunit.run-suite",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
         "key": "cmd+b",
         "command": "php-cs-fixer.fix"
     },
+
+    // ProjectManager Section
     {
-        "key": "alt+j",
-        "command": "extension.vim_ctrl+f",
-        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+        "key": "cmd+alt+p",
+        "command": "projectManager.listProjects"
+    },
+
+    // Window Section
+    {
+        "key": "cmd+alt+1",
+        "command": "workbench.action.editorLayoutSingle"
     },
     {
-        "key": "ctrl+f",
-        "command": "-extension.vim_ctrl+f",
-        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+        "key": "shift+oem_1 v",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+oem_1 s",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+l",
+        "command": "workbench.action.moveEditorToRightGroup",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+h",
+        "command": "workbench.action.moveEditorToLeftGroup",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+j",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+k",
+        "command": "workbench.action.moveEditorToAboveGroup",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+
+    // Cursor Section
+    {
+        "key": "shift+alt+k",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "scrollPageDown",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
         "key": "alt+k",
-        "command": "extension.vim_ctrl+b",
-        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+        "command": "scrollPageUp",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": "ctrl+b",
-        "command": "-extension.vim_ctrl+b",
-        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+        "key": "cmd+l cmd+l",
+        "command": "workbench.action.focusRightGroup"
     },
     {
-        "key": "shift+r",
-        "command": "workbench.action.showAllSymbols",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+        "key": "cmd+h cmd+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+k cmd+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "cmd+j cmd+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "alt+l",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Normal' && vim.mode != 'Insert'"
+    },
+
+    // Others
+    {
+        "key": "alt+enter",
+        "command": "editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
     },
     {
         "key": "shift+x",
         "command": "workbench.action.reopenClosedEditor",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": ", a",
-        "command": "workbench.action.toggleActivityBarVisibility",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+        "key": "q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": ", s",
-        "command": "workbench.action.toggleStatusbarVisibility",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
+        "key": "shift+r",
+        "command": "workbench.action.showAllSymbols",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": ", t",
-        "command": "workbench.action.toggleTabsVisibility",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !inDebugRepl"
-    }
+        "key": "shift+s",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+
+    // Removed Section
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "win+k win+r",
+        "command": "-better-phpunit.run"
+    },
+    {
+        "key": "win+k win+p",
+        "command": "-better-phpunit.run-previous"
+    },
+    {
+        "key": "alt+f12",
+        "command": "-editor.action.showContextMenu",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "-projectManager.listProjects"
+    },
 ]
