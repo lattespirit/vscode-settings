@@ -19,6 +19,11 @@
         "key": "alt+3",
         "command": "workbench.action.terminal.toggleTerminal"
     },
+    {
+        "key": "escape",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
 
     // Toolbar Section
     {
@@ -142,6 +147,11 @@
         "key": "ctrl+j ctrl+j",
         "command": "workbench.action.focusBelowGroup"
     },
+    {
+        "key": "alt+l",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Normal' && vim.mode != 'Insert'"
+    },
 
     // Others
     {
@@ -168,6 +178,11 @@
         "key": "shift+r",
         "command": "workbench.action.showAllSymbols",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+s",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
     },
 
     // Removed Section
