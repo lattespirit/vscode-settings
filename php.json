@@ -1,0 +1,304 @@
+{
+	"Assert": {
+		"prefix": "assert",
+		"body": [
+			"\\$this->assert$1($2);"
+		],
+		"description": "Assert"
+	},
+	"Assert Count": {
+		"prefix": "assert-count",
+		"body": [
+			"\\$this->assertCount($1);"
+		],
+		"description": "Assert Count"
+	},
+	"Assert Equals": {
+		"prefix": "assert-equals",
+		"body": [
+			"\\$this->assertEquals($1);"
+		],
+		"description": "Assert Equals"
+	},
+	"Assert Not Equals": {
+		"prefix": "assert-not-equals",
+		"body": [
+			"\\$this->assertNotEquals($1);"
+		],
+		"description": "Assert Not Equals"
+	},
+	"Assert Null": {
+		"prefix": "assert-null",
+		"body": [
+			"\\$this->assertNull($1);"
+		],
+		"description": "Assert Null"
+	},
+	"Assert Not Null": {
+		"prefix": "assert-not-null",
+		"body": [
+			"\\$this->assertNotNull($1);"
+		],
+		"description": "Assert Not Null"
+	},
+	"Assert True": {
+		"prefix": "assert-true",
+		"body": [
+			"\\$this->assertTrue($1);"
+		],
+		"description": "Assert True"
+	},
+	"Assert False": {
+		"prefix": "assert-false",
+		"body": [
+			"\\$this->assertFalse($1);"
+		],
+		"description": "Assert False"
+	},
+	"Assert Expect Exception": {
+		"prefix": "assert-exception",
+		"body": [
+			"\\$this->assertException$1($2::class);"
+		],
+		"description": "Assert Expect Exception"
+	},
+	"Without Exception Handling in Tests": {
+		"prefix": "without-exception-handling",
+		"body": [
+			"\\$this->withoutExceptionHandling();$0"
+		],
+		"description": "Without Exception Handling in Tests"
+	},
+	"Decode Test Response Content": {
+		"prefix": "response-content",
+		"body": [
+			"dd(\\$this->dump();"
+		],
+		"description": "Decode Test Response Content"
+	},
+	"Decode Test Json Response": {
+		"prefix": "response-json",
+		"body": [
+			"dd(\\$this->decodeResponseJson();"
+		],
+		"description": "Decode Test Json Response"
+	},
+
+
+
+
+	"PHP Class Constructor": {
+		"prefix": "_c",
+		"body": [
+			"public function __constructor($1)",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "PHP Class Constructor"
+	},
+	"Public Function": {
+		"prefix": "met",
+		"body": [
+			"public function $1($2)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Public Function"
+	},
+	"Protected Function": {
+		"prefix": "promet",
+		"body": [
+			"protected function $1($2)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Protected Function"
+	},
+	"Private Function": {
+		"prefix": "primet",
+		"body": [
+			"private function $1($2)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Private Function"
+	},
+	"Public Static Function": {
+		"prefix": "smet",
+		"body": [
+			"public static function $1($2)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Public Static Function"
+	},
+	"Protected Static Function": {
+		"prefix": "prosmet",
+		"body": [
+			"protected static function $1($2)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Protected Static Function"
+	},
+	"Public Variable": {
+		"prefix": "var",
+		"body": [
+			"public \\$$1;"
+		],
+		"description": "Public Variable"
+	},
+	"Protected Variable": {
+		"prefix": "provar",
+		"body": [
+			"protected \\$$1;"
+		],
+		"description": "Protected Variable"
+	},
+	"Private Variable": {
+		"prefix": "privar",
+		"body": [
+			"private \\$$1;"
+		],
+		"description": "Private Variable"
+	},
+	"Test Function": {
+		"prefix": "tmet",
+		"body": [
+			"/** @test */",
+			"function ${1/\\s/_/g}()",
+			"{",
+			"\t$2",
+			"\\}",
+		],
+		"description": "Test Function"
+	},
+	"Feature Test": {
+		"prefix": "ftest",
+		"body": [
+			"namespace Tests\\Feature;",
+			"",
+			"use Tests\\TestCase;\nuse Illuminate\\Foundation\\Testing\\RefreshDatabase;",
+			"",
+			"class ${TM_FILENAME_BASE} extends TestCase",
+			"{",
+			"\tuse RefreshDatabase;",
+			"",
+			"\t/** @test */",
+			"\tfunction ${1/\\s/_/g}()",
+			"\t{",
+			"\t\t$0",
+			"\t\\}",
+			"\\}",
+		],
+		"description": "Feature Test"
+	},
+	"Unit Test": {
+		"prefix": "utest",
+		"body": [
+			"namespace Tests\\Unit;",
+			"",
+			"use Tests\\TestCase;\nuse Illuminate\\Foundation\\Testing\\RefreshDatabase;",
+			"",
+			"class ${TM_FILENAME_BASE} extends TestCase",
+			"{",
+			"\tuse RefreshDatabase;",
+			"",
+			"\t/** @test */",
+			"\tfunction ${1/\\s/_/g}()",
+			"\t{",
+			"\t\t$0",
+			"\t\\}",
+			"\\}",
+		],
+		"description": "Unit Test"
+	},
+
+
+
+	"Table Text": {
+		"prefix": "ttext",
+		"body": [
+			"\\$table->text('$1');"
+		],
+		"description": "Table Text"
+	},
+	"Table String": {
+		"prefix": "tstring",
+		"body": [
+			"\\$table->string('$1');"
+		],
+		"description": "Table String"
+	},
+	"Table Integer": {
+		"prefix": "tint",
+		"body": [
+			"\\$table->integer('$1');"
+		],
+		"description": "Table Integer"
+	},
+	"Table Unsigned Integer": {
+		"prefix": "tunint",
+		"body": [
+			"\\$table->unsignedInteger('$1');"
+		],
+		"description": "Table Unsigned Integer"
+	},
+
+
+
+	"Route for GET Request": {
+		"prefix": "rget",
+		"body": [
+			"Route::get('$1', function ($2) {",
+			"\t$0",
+			"\\});"
+		],
+		"description": "Route for GET Request"
+	},
+	"Route Controller for GET Request": {
+		"prefix": "rgetc",
+		"body": [
+			"Route::get('$1', '$3${2:Controller}@$4');"
+		],
+		"description": "Route Controller for GET Request"
+	},
+	"Route Controller for POST Request": {
+		"prefix": "rpostc",
+		"body": [
+			"Route::post('$1', '$3${2:Controller}@$4');"
+		],
+		"description": "Route Controller for POST Request"
+	},
+	"DB Listen": {
+		"prefix": "dblisten",
+		"body": [
+			"\\DB::listen(function (\\$query) {",
+			"\t\\Log::info(\\$query->sql);",
+			"\t\\Log::info(\\$query->bindings);",
+			"\t\\Log::info(\\$query->time);",
+			"\\});"
+		],
+		"description": "DB Listen"
+	},
+	"Die and Dump": {
+		"prefix": "dd",
+		"body": [
+			"dd(\\$$1);"
+		],
+		"description": "Die and Dump"
+	},
+	"This": {
+		"prefix": "this",
+		"body": [
+			"\\$this->"
+		],
+		"description": "This"
+	}
+}
