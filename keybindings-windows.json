@@ -152,6 +152,11 @@
         "command": "editor.action.insertCursorAtEndOfEachLineSelected",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Normal' && vim.mode != 'Insert'"
     },
+    {
+        "key": "oem_comma g",
+        "command": "editor.action.revealDefinitionAside",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
 
     // Others
     {
@@ -184,6 +189,16 @@
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
     },
+    {
+        "key": "Backspace",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
 
     // Removed Section
     {
@@ -214,5 +229,10 @@
     {
         "key": "shift+alt+p",
         "command": "-projectManager.listProjects"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
 ]
