@@ -1,11 +1,42 @@
 {
-    "workbench.statusBar.visible": false,
-    "vim.disableAnnoyingNeovimMessage": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.fontSize": 14.5,
-    "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
-    "editor.minimap.enabled": false,
+    "window.closeWhenEmpty": false,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "editor.fontFamily": "Dank Mono",
     "editor.lineNumbers": "off",
+    "files.trimTrailingWhitespace": true,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+    "workbench.colorCustomizations": {},
+    "workbench.statusBar.visible": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": true,
+    "window.menuBarVisibility": "toggle",
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    },
+    "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1555058002554,
+    "php-cs-fixer.config": "C:\\Users\\de'l'l\\.php_cs;.php_cs.dist",
+    "php-cs-fixer.executablePathWindows": "C:\\Users\\de'l'l\\AppData\\Roaming\\Composer\\vendor\\bin\\php-cs-fixer.bat",
+    "php-cs-fixer.allowRisky": true,
+    "window.openFilesInNewWindow": "on",
+    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "window.openFoldersInNewWindow": "on",
+    "editor.fontSize": 15,
+    "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+    "window.openWithoutArgumentsInNewWindow": "off",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     "vim.leader": ",",
     "vim.insertModeKeyBindings": [
         {
@@ -13,18 +44,29 @@
             "after": ["<Esc>"]
         }
     ],
-    "workbench.colorTheme": "Slime",
-    "editor.fontLigatures": true,
-    "workbench.activityBar.visible": false,
-    "explorer.openEditors.visible": 0,
-    "php-cs-fixer.config": "~/.php_cs",
-    "window.openFilesInNewWindow": "on",
-    "projectManager.openInNewWindowWhenClickingInStatusBar": true,
-    "window.openWithoutArgumentsInNewWindow": "on",
-    "window.openFoldersInNewWindow": "on",
-    "php-cs-fixer.allowRisky": true,
-    "[php]": {
-        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    "shellLauncher.shells.windows": [
+        {
+            "shell": "D:\\Program Files\\Git\\bin\\bash.exe",
+            "label": "Git bash"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\cmd.exe",
+            "label": "cmd"
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-w>": false,
+        "<C-f>": false,
+        "<C-n>": false,
+        "<C-y>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-u>": false,
+        "<C-x>": false
     },
-    "workbench.editor.showTabs": true
+    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+    "editor.fontLigatures": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "search.useIgnoreFiles": false
 }
