@@ -109,6 +109,21 @@
         "command": "workbench.action.moveEditorToAboveGroup",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
+    {
+        "key": "1 1",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "2 2",
+        "command": "workbench.action.evenEditorWidths",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        "key": "3 3",
+        "command": "workbench.action.increaseViewSize",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    },
 
     // Cursor Section
     {
