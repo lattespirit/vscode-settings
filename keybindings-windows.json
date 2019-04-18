@@ -137,14 +137,14 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+j",
-        "command": "scrollPageDown",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+        "key": "alt+k",
+        "command": "cursorPageUp",
+        "when": "textInputFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
-        "key": "alt+k",
-        "command": "scrollPageUp",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+        "key": "alt+j",
+        "command": "cursorPageDown",
+        "when": "textInputFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
     },
     {
         "key": "ctrl+l ctrl+l",
