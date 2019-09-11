@@ -90,7 +90,7 @@
 	"PHP Class Constructor": {
 		"prefix": "_c",
 		"body": [
-			"public function __constructor($1)",
+			"public function __construct($1)",
 			"{",
 			"\t$2",
 			"}"
