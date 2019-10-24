@@ -24,6 +24,11 @@
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
     },
+    {
+        "key": "escape",
+        "command": "workbench.action.closePanel",
+        "when": "editorTextFocus"
+    },
 
     // Toolbar Section
     {
