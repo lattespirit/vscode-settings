@@ -29,6 +29,11 @@
         "command": "workbench.action.closePanel",
         "when": "editorTextFocus"
     },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "sideBarFocus"
+    },
 
     // Toolbar Section
     {
