@@ -172,9 +172,9 @@
 		"prefix": "tmet",
 		"body": [
 			"/** @test */",
-			"function ${1/\\s/_/g}()",
+			"function ${CLIPBOARD/[\\s]/_/g}()",
 			"{",
-			"\t$2",
+			"\t$1",
 			"\\}",
 		],
 		"description": "Test Function"
