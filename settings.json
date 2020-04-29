@@ -68,5 +68,29 @@
     "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
     "editor.fontLigatures": true,
     "workbench.startupEditor": "newUntitledFile",
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[vue]": {
+        "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "prettier.disableLanguages": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "eslint.format.enable": true
 }
